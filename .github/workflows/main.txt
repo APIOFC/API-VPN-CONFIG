@@ -7,6 +7,10 @@ TUTORIAL PEMASANGAN
 5 > isi bagian NAMA - URL - AUTO UPDATE 
 6 > pencet SAVE di pojok kanan atas
 7 > isi bagian URL dengan link config yang sudah disediakan oleh admin
+8 > sev dengan menekan tombol yang ada di pojok kanan atas
+9 > pencet tap ro start
+10 > pencet tanda petir setidaknya 2 kali , berwarna biru dibagian kanan bawah, otomatis ping muncul , jika tidak muncul ping kemungkinan config sedang update atau tkp anda tidak support 
+11 > pilih sesuan kartu dan kuota yang ingin diubah
 
 NOTE :
  🔥 config auto update, jadi kalian g perlu lagi  gonta ganti akun ssh sendiri
