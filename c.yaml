@@ -1,0 +1,211 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+tproxy-port: 7895
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+    - 8.8.8.8
+    - 1.0.0.1
+    - https://dns.google/dns-query
+  fallback:
+    - 1.1.1.1
+    - 8.8.4.4
+    - https://cloudflare-dns.com/dns-query
+    - 112.215.203.254
+  default-nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+proxies:
+  - name: 🛰️ TELKOM OPOK 🛰️
+    server: skul.id
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+     path: /vpnjantit
+     headers:
+       Host: indo3.vpnjantit.com
+
+  - name: 🛰️ AXIS SUSHIROL 🛰️
+    server: www.sushiroll.co.id
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+     path: /vpnjantit
+     headers:
+       Host: indo3.vpnjantit.com
+       
+  - name: 🛰️ AXIS NETFLIX 🛰️
+    server: creativeservices.netflix.com
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+     path: /vpnjantit
+     headers:
+        Host: indo3.vpnjantit.com
+ 
+  - name: 🛰️ AXIS TIKTOK 🛰️
+    server: tiktok1.zendesk.com
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        Host: indo3.vpnjantit.com
+ 
+  - name: 🛰️ AXIS YOUTUBE 🛰️
+    server: youtube.zendesk.com
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        Host: indo3.vpnjantit.com
+
+  - name: 🛰️ AXIS EDUKASI 🛰️
+    server: www.skillacademy.com
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        Host: indo3.vpnjantit.com
+        
+  - name: 🛰️ XL  EDUKASI 🛰️
+    server: www.skillacademy.com
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        Host: indo3.vpnjantit.com
+
+  - name: 🛰️ XL GAME 🛰️
+    server: mpl.mobilelegends.com
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        Host: indo3.vpnjantit.com
+
+  - name: 🛰️ BYU OPOK 🛰️
+    server: space.byu.id
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        Host: indo3.vpnjantit.com
+
+  - name: 🛰️ INDOSAT EDUKASI 🛰️
+    server: blog.webex.com
+    port: 443
+    type: vmess
+    uuid: 396e112a-2e3f-11ef-8e35-00163c31c501
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: indo3.vpnjantit.com
+    network: ws
+    ws-opts:
+      path: /vpnjantit
+      headers:
+        Host: indo3.vpnjantit.com
+
+proxy-groups:
+  - name: ✴️ ALL ✴️   #Sama kan dengan yang ada di rules MATCH,
+    type: select    #type "select" agar bisa ganti config secara manual"
+    proxies:
+      - REJECT
+      - 🛰️ TELKOM OPOK 🛰️
+      - 🛰️ AXIS SUSHIROL 🛰️
+      - 🛰️ AXIS NETFLIX 🛰️
+      - 🛰️ AXIS TIKTOK 🛰️
+      - 🛰️ AXIS YOUTUBE 🛰️
+      - 🛰️ AXIS EDUKASI 🛰️
+      - 🛰️ XL  EDUKASI 🛰️
+      - 🛰️ XL GAME 🛰️
+      - 🛰️ BYU OPOK 🛰️
+      - 🛰️ INDOSAT EDUKASI 🛰️
+rules:
+  - MATCH,✴️ ALL ✴️
